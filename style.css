@@ -1,45 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster&display=swap");
 * {
   margin: 0px;
   box-sizing: border-box;
+  font-family: "Lora", serif;
 }
 
-.nav {
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
+  font-size: 100px;
+  margin: 20px;
+}
+
+.pr {
+  text-align: center;
+  font-family: "Lora", serif;
+  border: 3px solid rgba(105, 95, 89, 0.445);
+  background-image: linear-gradient(rgba(69, 61, 59, 0.0980392157), rgba(23, 20, 18, 0.2823529412));
+}
+
+body .nav {
   display: flex;
   justify-content: space-between;
   background-color: whitesmoke;
-  height: 50px;
+  height: 60px;
+  padding: 20px;
 }
-.nav h1 {
-  font-family: "Pacifico", cursive;
+body .nav h1 {
+  font-family: "Great Vibes", cursive;
 }
-
-.search {
+body .search {
   display: flex;
   margin: 10px;
 }
-
-.option {
+body .option {
   display: flex;
   background-color: whitesmoke;
-  height: 30px;
+  height: 40px;
   justify-content: space-around;
   list-style-type: none;
 }
-.option :hover {
-  background-color: rgba(105, 142, 211, 0.825);
+body .option :hover {
+  color: rgba(105, 142, 211, 0.825);
 }
-.option a {
+body .option a {
   text-decoration: none;
+  color: black;
 }
-
-.container {
+body .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 50px;
   margin-top: 40px;
 }
-.container p {
+body .container p {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: large;
@@ -49,19 +65,47 @@
   text-align: center;
   height: 60px;
 }
-
-.footer {
+body .footer {
   background-color: black;
 }
-.footer .a {
+body .footer .a {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  height: 50px;
 }
-.footer .a :hover {
-  background-color: rgba(217, 208, 208, 0.791);
+body .footer .a :hover {
+  color: rgba(217, 208, 208, 0.791);
 }
-.footer a {
+body .footer .copy {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+body .footer a {
   text-decoration: none;
   color: white;
+}
+body .footer .footer1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .footer .footer1 .contact {
+  background-color: white;
+}
+body .footer .footer1 img {
+  margin: 10px;
+}
+@media screen and (min-width: 340px) and (max-width: 480px) {
+  body .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 700px) {
+  body .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */

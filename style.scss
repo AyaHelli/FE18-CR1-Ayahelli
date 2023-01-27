@@ -1,67 +1,113 @@
-* {
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: whitesmoke;
-    height: 50px;
-    h1 {
-        font-family: 'Pacifico', cursive;
-    }
-}
-
-.search {
-    display: flex;
-    margin: 10px;
-}
-
-.option {
-    display: flex;
-    background-color: whitesmoke;
-    height: 30px;
-    justify-content: space-around;
-    list-style-type: none;
-     :hover {
-        background-color: rgba(105, 142, 211, 0.825);
-    }
-    a {
-        text-decoration: none;
-    }
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 50px;
-    margin-top: 40px;
-    p {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        font-size: large;
-        position: relative;
-        bottom: 65px;
-        z-index: 1;
-        text-align: center;
-        height: 60px;
-    }
-}
-
-.footer {
-    .a {
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-         :hover {
-            background-color: rgba(217, 208, 208, 0.791);
-        }
-    }
-    background-color: black;
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
+                @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster&display=swap');
+                * {
+                    margin: 0px;
+                    box-sizing: border-box;
+                    font-family: 'Lora', serif;
+                }
+                
+                .title {
+                    display: flex;
+                    justify-content: center;
+                    font-family: 'Great Vibes', cursive;
+                    font-size: 100px;
+                    margin: 20px;
+                }
+                
+                .pr {
+                    text-align: center;
+                    font-family: 'Lora', serif;
+                    border: 3px solid rgba(105, 95, 89, 0.445);
+                    background-image: linear-gradient(#453d3b19, #17141248);
+                }
+                
+                body {
+                    .nav {
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: whitesmoke;
+                        height: 60px;
+                        padding: 20px;
+                        h1 {
+                            font-family: 'Great Vibes', cursive;
+                        }
+                    }
+                    .search {
+                        display: flex;
+                        margin: 10px;
+                    }
+                    .option {
+                        display: flex;
+                        background-color: whitesmoke;
+                        height: 40px;
+                        justify-content: space-around;
+                        list-style-type: none;
+                         :hover {
+                            color: rgba(105, 142, 211, 0.825);
+                        }
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                    .container {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(3, 1fr);
+                        gap: 50px;
+                        margin-top: 40px;
+                        p {
+                            background-color: rgba(0, 0, 0, 0.5);
+                            color: white;
+                            font-size: large;
+                            position: relative;
+                            bottom: 65px;
+                            z-index: 1;
+                            text-align: center;
+                            height: 60px;
+                        }
+                    }
+                    .footer {
+                        background-color: black;
+                        .a {
+                            display: flex;
+                            justify-content: space-around;
+                            list-style-type: none;
+                            height: 50px;
+                             :hover {
+                                color: rgba(217, 208, 208, 0.791);
+                            }
+                        }
+                        .copy {
+                            color: white;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                        .footer1 {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .contact {
+                                background-color: white;
+                            }
+                            img {
+                                margin: 10px;
+                            }
+                        }
+                    }
+                    @media screen and(min-width:340px)and(max-width:480px) {
+                        .container {
+                            grid-template-columns: repeat(1, 1fr);
+                            grid-template-rows: repeat(9, 1fr);
+                        }
+                    }
+                    @media screen and(min-width:481px)and(max-width:700px) {
+                        .container {
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-rows: repeat(5, 1fr);
+                        }
+                    }
+                }
